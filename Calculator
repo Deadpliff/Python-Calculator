@@ -1,0 +1,21 @@
+import math
+exp=input('Enter expression:')
+while True:
+    try:
+        print('Result:',eval(exp))
+        print('Type anything to shut down or C to continue:')
+        check=input()
+        if check == 'c' or check=='C':
+            exp=input('Enter expression:')
+        else:
+            print('Calculator off')
+            break
+    except:
+        print('Invalid input')
+        print('Type anything to shut down or C to continue:')
+        check=input()
+        if check == 'c' or check == 'C':
+            exp=input('Enter expression:')
+        else:
+            print('Calculator off')
+            break
